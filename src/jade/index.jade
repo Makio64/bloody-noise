@@ -1,0 +1,76 @@
+doctype html
+
+//- Welcome in the source badass
+//- 
+//-                        .s$$$Ss.
+//-            .8,         $$$. _. .              ..sS$$$$$"  ...,.;
+//- o.   ,@..  88        =.$"$'  '          ..sS$$$$$$$$$$$$s. _;"'
+//-  @@@.@@@. .88.   `  ` ""l. .sS$$.._.sS$$$$$$$$$$$$S'"'
+//-   .@@@q@@.8888o.         .s$$$$$$$$$$$$$$$$$$$$$'
+//-     .:`@@@@33333.       .>$$$$$$$$$$$$$$$$$$$$'
+//-     .: `@@@@333'       ..>$$$$$$$$$$$$$$$$$$$'
+//-      :  `@@333.     `.,   s$$$$$$$$$$$$$$$$$'
+//-      :   `@33       $$ S.s$$$$$$$$$$$$$$$$$'
+//-      .S   `Y      ..`  ,"$' `$$$$$$$$$$$$$$
+//-      $s  .       ..S$s,    . .`$$$$$$$$$$$$.
+//-      $s .,      ,s ,$$$$,,sS$s.$$$$$$$$$$$$$.
+//-      / /$$SsS.s. ..s$$$$$$$$$$$$$$$$$$$$$$$$$.
+//-     /`.`$$$$$dN.ssS$$'`$$$$$$$$$$$$$$$$$$$$$$$.
+//-    ///   `$$$$$$$$$'    `$$$$$$$$$$$$$$$$$$$$$$.
+//-   ///|     `S$$S$'       `$$$$$$$$$$$$$$$$$$$$$$.
+//-  / /                      $$$$$$$$$$$$$$$$$$$$$.
+//-                           `$$$$$$$$$$$$$$$$$$$$$s.
+//-                            $$$"'        .?T$$$$$$$
+//-                           .$'        ...      ?$$#\
+//-                           !       -=S$$$$$s
+//-                         .!       -=s$$'  `$=-_      :
+//-                        ,        .$$$'     `$,       .|
+//-                       ,       .$$$'          .        ,
+//-                      ,     ..$$$'
+//-                          .s$$$'                 `s     .
+//-                   .   .s$$$$'                    $s. ..$s
+//-                  .  .s$$$$'                      `$s=s$$$
+//-                    .$$$$'                         ,    $$s
+//-               `   " .$$'                               $$$
+//-               ,   s$$'                              .  $$$s
+//-            ` .s..s$'                                .s ,$$
+//-             .s$$$'                                   "s$$$,
+//-          -   $$$'                                     .$$$$.
+//-        ."  .s$$s                                     .$',',$.
+//-        $s.s$$$$S..............   ................    $$....s$s......
+//-         `""'           `     ```"""""""""""""""         `""   ``
+//- 
+//- This is a Pixi.js Experiments by David Ronai - Makiopolis.com - @Makio64
+//- Github/Source : https://github.com/Makio64/bloody-noise
+
+html(lang="en")
+	head
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		meta(name="viewport", content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width, minimal-ui")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black")
+
+		meta(property="og:site_name", content="Makiopolis")
+		meta(property="og:title", content="Makiopolis")
+		meta(property="og:description", content="experiments from David Ronai")
+		meta(property="og:type", content="")
+		meta(property="og:url", content="")
+		meta(property="og:image", content="")
+				
+		title BloodyNoise - A Pixi.js Experiments
+		// build:css css/main.css
+		link(rel='stylesheet', href='css/main.css')
+		// endbuild
+	body
+
+		// build:js js/vendor.js
+		// bower:js
+		// endbower
+		// endbuild
+
+		// build:js js/main.js
+		script(type='text/javascript', src='./js/shaders/NoiseFilter.js')
+		script(type='text/javascript', src='./js/shaders/PerlinNoiseFilter.js')
+		script(type='text/javascript', src='./js/2d/Stage2d.js')
+		script(type='text/javascript', src='./js/main.js')
+		// endbuild
